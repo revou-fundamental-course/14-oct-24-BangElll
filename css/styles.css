@@ -1,0 +1,49 @@
+/*Ini CSS*/
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/100);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav > a {
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.photo-banner {
+    height: 250px;
+    background-image: url(https://picsum.photos/100);
+    background-size: cover;
+    background-position: top;
+}
+
+.article{
+    height: 300px;
+}
+
+.message-container {
+    display: flex;
+}
+
+footer > div {
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+}
