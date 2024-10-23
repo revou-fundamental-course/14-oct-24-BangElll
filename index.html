@@ -10,7 +10,7 @@
     <!--Logo icon & Navigasi bar-->
     <header class="main-header">
         <!--Logo-->
-        <img class="logo" alt="" src=""></div>
+        <img class="logo" alt="" src="assets\logo.jpg"></div>
 
         <!--Navigasi-->
         <nav>
@@ -36,9 +36,9 @@
 
                 <!--Photo Banner-->
                 <div class="photo-banner">
-                    <img class="img-slideshow" src="https://picsum.photos/100"/>
-                    <img class="img-slideshow" src="https://picsum.photos/100"/>
-                    <img class="img-slideshow" src="https://picsum.photos/100"/>
+                    <img class="img-slideshow" src="assets\profile3.jpg" width="960" height="652"/>
+                    <img class="img-slideshow" src="assets\profile1.jpg" width="960" height="652"/>
+                    <img class="img-slideshow" src="assets\profile2.jpg" width="960" height="652"/>
                     <button onclick="plusDivs(-1)">Previous</button>
                     <button onclick="plusDivs(1)">Next</button>
                 </div>
@@ -55,24 +55,19 @@
             </header>
 
             <article>
-                <div class="article"></div>
+                <img class="article"></div>
+                <p></p>
             </article>
         </section>
 
         <hr />
 
-        <!--Section Portofolio
+        <!--Section Portofolio-->
         <section id="section-portofolio">
-            <header>
-                <h1>Portofolio</h1>
-            </header>
-
-            <article>
-                <div class="article"></div>
-            </article>
+            <header></header>
+            <article></article>
         </section>
 
-        <hr /> -->
 
         <!--Section Message Us-->
         <section id="section-message-us">
@@ -82,7 +77,8 @@
 
             <div class="message-container">
                 <form name="message-form" onsubmit="return validateForm()">
-                    Nama : <input placeholder="Nama" type="text" name="full-name"/>
+                    Nama : 
+                    <input placeholder="Nama" type="text" name="full-name"/>
                     <br/>
 
                     Tanggal Lahir :
@@ -90,10 +86,10 @@
                     <br/>
 
                     Jenis Kelamin :
-                    <input type="radio" id="male" name="gender" value="Laki-laki"/>
-                    <label for="male">Laki-laki</label>
-                    <input type="radio" id="female" name="gender" value="Perempuan"/>
-                    <label for="female">Perempuan</label>
+                    <select name="gender">
+                        <option id="male" value="Laki-laki">Laki-laki</option>
+                        <option id="female" value="Perempuan">Perempuan</option>
+                    </select>
                     <br/>
 
                     Pesan :
@@ -104,6 +100,7 @@
                 </form>
 
                 <div class="hasil">
+                    <p>OUTPUT</p>
                     <p>Nama : <span id="sender-full-name"></span></p>
                     <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
                     <p>Jenis Kelamin : <span id="sender-gender"></span></p>

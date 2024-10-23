@@ -1,5 +1,6 @@
 //Ini JavaScript
 
+//Fungsi untuk input nama pengguna
 function replaceName() {
     let name = prompt("Please enter your name", "");
     document.getElementById("name").innerHTML = name;
@@ -7,6 +8,7 @@ function replaceName() {
 
 replaceName();
 
+//Fungsi photo banner yang dapat di next&previous
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -24,11 +26,12 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block";
 }
-
+//Menambahkan interval photo banner agar dapat berganti sendiri
 setInterval(() => {
     plusDivs(1);
 }, 5000);
 
+//Fungsi validasi pada form message us
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
@@ -44,7 +47,7 @@ function validateForm() {
 
     return false;
 }
-
+//Fungsi untuk memasukkan data yg telah diinput ke html
 function setSenderUI(name, birthDate, gender, messages) {
     document.getElementById("sender-full-name").innerHTML = name;
     document.getElementById("sender-birth-date").innerHTML = birthDate;
