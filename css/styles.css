@@ -69,17 +69,6 @@ div > button {
     background-color: lightblue;
 }
 
-.article{
-    background-color: white;
-    border: 1px solid;
-    height: 200px;
-    width: 200px;
-    margin: 40px 20px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-}
-
 /*Menambahkan margin pada setiap section*/
 main > section {
     margin: 40px;
